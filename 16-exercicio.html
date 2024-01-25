@@ -12,9 +12,22 @@
             font-family: 'Open Sans', sans-serif;
         }
 
+        body{
+            max-width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         caption{
             font-family: 'Merriweather', serif;
             text-align: center;
+        }
+
+        table{
+            margin-top: 3rem;
+            overflow-x: scroll;
         }
 
         tr,th,td{
@@ -27,7 +40,7 @@
     </style>
 </head>
 <body>
-    <caption>Tabela de Carros</caption><br><br>
+    <caption>Tabela de Carros</caption><br>
     <table>
         <thead>
             <tr>
