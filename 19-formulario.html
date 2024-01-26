@@ -53,18 +53,23 @@
             padding: 0.3rem;
             border-radius: 0.25rem;
             border: 2px solid #000;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            transform: scale(1.04);
         }
 
     </style>
 </head>
 <body>
-    <form>
+    <form action="processador.php" method="post">
         <h1>Formulário</h1>
         <label for="name">Usuario:</label><br>
-        <input type="text" name="name" id="name"><br>
+        <input type="text" name="name" id="name" placeholder="Nome do Usuario" required><br>
         <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email"><br>
-        <button type="submit" class="btn">Enviar</button>
+        <input type="email" name="email" id="email" placeholder="Digite o Email" required><br>
+        <input type="submit" class="btn" value="Enviar">
     </form>
 </body>
 </html>
