@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.googleapis.com/css?family=Ubuntu|Lora">
+    <title>Formulario HTML</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lora', serif;
+        }
+
+        body{
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(90deg, #00aa75, #009595);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form{
+            background-color: #f0f0f0;
+            color: #000;
+            border: 2px solid #000;
+            box-shadow: 0.5px 0.5px black;
+            padding: 8rem;
+            border-radius: 0.5rem;
+        }
+
+        form h1{
+            margin-bottom: 2rem;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        form input{
+            margin-bottom: 1rem;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .btn{
+            background-color: #037bfc;
+            font-size: 0.9rem;
+            font-family: 'Ubuntu', sans-serif;
+            color: #fff;
+            margin-top: 1.5rem;
+            padding: 0.3rem;
+            border-radius: 0.25rem;
+            border: 2px solid #000;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Formulário</h1>
+        <label for="name">Usuario:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</body>
+</html>

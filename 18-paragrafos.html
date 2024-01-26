@@ -1,17 +1,40 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="pt-br"> <!-- Linguagem PT-BR -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.googleapis.com/css?family=Ubuntu|Lora">
-    <title>Mecânica de Motos - Parágrafos</title>
+    <meta charset="UTF-8"> <!-- Conjunto de Caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tag Viewport para Responsividade -->
+    <link rel="stylesheet" href="https://www.googleapis.com/css?family=Ubuntu|Lora"> <!-- Google Fonts-->
+    <title>Mecânica de Motos - Parágrafos</title> <!-- Titulo HTML -->
+
+    <!-- Inicio do CSS -->
     <style>
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: #fafafa;
+        }
+        
+        nav{
+            background-color: #000;
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #fafafa;
+            padding: 0.8rem;
+        }
+
+        a:hover{
+            background-color: #fafafa;
+            color: #000;
         }
 
         h1,
@@ -24,21 +47,25 @@
             font-family: 'Lora', serif;
         }
     </style>
-</head>
 
+    <!-- Fim do CSS -->
+</head>
+<!-- Fim do Cabeçalho HTML-->
+<!-- Inicio do Corpo em HTML-->
 <body>
+    <nav>
+        <a href="18-paragrafos.html">Inicio da Página</a>
+        <a href="18-div.html">Página Completa</a>
+        <a href="18-listas.html">Lista de Ferramentas</a>
+        <a href="18-tabela.html">Tabela de Motos</a>
+        <a href="18-fotos.html">Fotos das Ferramentas</a>
+    </nav>
     <h1>Mecânica de Motos</h1>
     <p>Para aprender mecânica de motos é preciso ter a ferramenta necessária para começar. Antes de tudo devemos ter um
         conhecimento técnico bem estruturado</p>
     <p>Depois devemos pensar nas ferramentas que são necessárias para fazer o nosso serviço. Segue o Link da Lista de
         Ferramentas Abaixo.</p>
     <a href="18-listas.html">Lista de Ferramentas</a><br>
-
-    <h2>Links para acessar cada um dos itens separados</h2>
-    <a href="18-listas.html">Lista de Ferramentas</a>
-    <a href="18-tabela.html">Tabela das Motos que você poderá Mexer</a>
-    <a href="18-fotos.html">Fotos das Ferramentas</a>
-    <a href="18-div.html">Pagina Completa</a>
 </body>
-
-</html>
+<!-- Fim do Corpo em HTML-->
+</html> <!-- Fim do HTML-->

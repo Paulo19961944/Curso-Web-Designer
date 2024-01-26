@@ -1,17 +1,39 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="pt-br"> <!-- Linguagem PT-BR-->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.googleapis.com/css?family=Ubuntu|Lora">
-    <title>Listas de Ferramentas</title>
+<head> <!-- Inicio do Cabeçalho HTML-->
+    <meta charset="UTF-8"> <!-- Cadeia de Caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Tag Viewport para Responsividade -->
+    <link rel="stylesheet" href="https://www.googleapis.com/css?family=Ubuntu|Lora"> <!-- Font do Google -->
+    <title>Listas de Ferramentas</title> <!-- Titulo HTML -->
+    <!-- Inicio do CSS-->
     <style>
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: #fafafa;
+        }
+
+        nav{
+            background-color: #000;
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #fafafa;
+            padding: 0.8rem;
+        }
+
+        a:hover{
+            background-color: #fafafa;
+            color: #000;
         }
 
         h1,
@@ -24,9 +46,18 @@
             font-family: 'Lora', serif;
         }
     </style>
+    <!-- Fim do CSS-->
 </head>
-
+<!-- Fim do Cabeçalho HTML-->
+<!-- Inicio do Corpo -->
 <body>
+    <nav>
+        <a href="18-paragrafos.html">Inicio da Página</a>
+        <a href="18-div.html">Página Completa</a>
+        <a href="18-listas.html">Lista de Ferramentas</a>
+        <a href="18-tabela.html">Tabela de Motos</a>
+        <a href="18-fotos.html">Fotos das Ferramentas</a>
+    </nav>
     <h1>Lista de Ferramentas Básicas</h1>
     <ol>
         <li>Paquímetro</li>
@@ -41,12 +72,5 @@
         <li>Conhecimento Técnico</li>
         <li>Vontade de Aprender</li>
     </ul><br>
-
-    <h2>Links para acessar cada um dos itens separados</h2>
-    <a href="18-tabela.html">Tabela das Motos que você poderá Mexer</a>
-    <a href="18-paragrafos.html">Inicio da Página</a>
-    <a href="18-fotos.html">Fotos das Ferramentas</a>
-    <a href="18-div.html">Pagina Completa</a>
-</body>
-
-</html>
+<!-- Fim do Corpo-->
+</html> <!-- Fim do HTML-->

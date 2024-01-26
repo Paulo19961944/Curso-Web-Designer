@@ -1,17 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="pt-br"> <!-- Linguagem PT-BR-->
 
+<!-- Cabeçalho do HTML -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.googleapis.com/css?family=Ubuntu|Lora">
-    <title>Exercicio</title>
+    <meta charset="UTF-8"> <!-- Comjunto de Caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tag Viewport para Responsividade-->
+    <link rel="stylesheet" href="https://www.googleapis.com/css?family=Ubuntu|Lora"> <!-- Fontes do Google -->
+    <title>Exercicio</title> <!-- Titulo do Navegador-->
+
+    <!-- Inicio do CSS -->
     <style>
         body {
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: #fafafa;
+        }
+
+        nav{
+            background-color: #000;
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #fafafa;
+            padding: 0.8rem;
+        }
+
+        a:hover{
+            background-color: #fafafa;
+            color: #000;
         }
 
         th,
@@ -39,12 +63,25 @@
             background-color: #80aa75;
         }
     </style>
-</head>
 
+    <!-- Fim do CSS-->
+</head>
+<!-- Fim do Cabeçalho HTML-->
+<!-- Inicio da Página -->
 <body>
-    <h1>Essa é uma tabela de motos que você pode mexer</h1><br>
+    <nav>
+        <a href="18-paragrafos.html">Inicio da Página</a>
+        <a href="18-div.html">Página Completa</a>
+        <a href="18-listas.html">Lista de Ferramentas</a>
+        <a href="18-tabela.html">Tabela de Motos</a>
+        <a href="18-fotos.html">Fotos das Ferramentas</a>
+    </nav>
+    <h1>Essa é uma tabela de motos que você pode mexer</h1><br><!-- Título da Página-->
+
+    <!-- Inicio da Tabela-->
     <table>
-        <caption>Tabela de Motos</caption><br>
+        <caption>Tabela de Motos</caption><br><!-- Titulo da Tabela-->
+        <!--Cabeçalho da Tabela-->
         <thead>
             <tr>
                 <th>Nome da Marca</th>
@@ -52,6 +89,7 @@
                 <th>Categoria</th>
             </tr>
         </thead>
+        <!-- Corpo da Tabela -->
         <tbody>
             <tr>
                 <td>Harley-Davidson</td>
@@ -69,13 +107,5 @@
                 <td>Big Trail</td>
             </tr>
         </tbody>
-    </table><br>
-
-    <h2>Links para acessar cada um dos itens separados</h2>
-    <a href="18-listas.html">Lista de Ferramentas</a>
-    <a href="18-paragrafos.html">Inicio da Página</a>
-    <a href="18-fotos.html">Fotos das Ferramentas</a>
-    <a href="18-div.html">Pagina Completa</a>
-</body>
-
+    </table><br><!-- Fim da Tabela -->
 </html>
