@@ -25,7 +25,9 @@
         }
 
         form{
-            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(240, 240, 240, 0.8);
             color: #000;
             border: 2px solid #000;
             box-shadow: 0.5px 0.5px black;
@@ -39,6 +41,7 @@
         }
 
         form input{
+            margin-right: 0.5rem;
             margin-bottom: 1rem;
             background-color: #000;
             color: #fff;
@@ -49,7 +52,8 @@
             font-size: 0.9rem;
             font-family: 'Ubuntu', sans-serif;
             color: #fff;
-            margin-top: 1.5rem;
+            width: 4rem;
+            margin-top: 2.5rem;
             padding: 0.3rem;
             border-radius: 0.25rem;
             border: 2px solid #000;
@@ -65,10 +69,12 @@
 <body>
     <form action="processador.php" method="post">
         <h1>Formulário</h1>
-        <label for="name_input">Usuario:</label><br>
-        <input type="text" name="name" id="name_input" placeholder="Nome do Usuario" required><br>
-        <label for="input_password">Senha:</label><br>
-        <input type="password" name="password" id="input_password" placeholder="Senha" required><br>
+        <label for="name_input">Usuario:</label>
+        <input type="text" name="name" id="name_input" placeholder="Nome do Usuario" required>
+        <label for="input_password">Senha:</label>
+        <input type="password" name="password" id="input_password" placeholder="Senha" required>
+        <label for="mail_input">Email:</label>
+        <input type="email" name="mail" id="mail_input" placeholder="E-mail" required>
         <input type="submit" class="btn" value="Enviar">
     </form>
 </body>
