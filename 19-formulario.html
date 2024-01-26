@@ -27,7 +27,7 @@
             align-items: center;
         }
 
-        form {
+        fieldset {
             display: flex;
             flex-direction: column;
             background-color: rgba(240, 240, 240, 0.8);
@@ -38,8 +38,8 @@
             border-radius: 0.5rem;
         }
 
-        form h1 {
-            margin-bottom: 2rem;
+        legend{
+            font-size: 2rem;
             font-family: 'Ubuntu', sans-serif;
         }
 
@@ -71,14 +71,16 @@
 
 <body>
     <form action="processador.php" method="post">
-        <h1>Formulário</h1>
-        <label for="name_input">Usuario:</label>
-        <input type="text" name="name" id="name_input" placeholder="Nome do Usuario" required>
-        <label for="input_password">Senha:</label>
-        <input type="password" name="password" id="input_password" placeholder="Senha" required>
-        <label for="mail_input">Email:</label>
-        <input type="email" name="mail" id="mail_input" placeholder="E-mail" required>
-        <input type="submit" class="btn" value="Enviar">
+        <fieldset>
+            <legend>Formulario de Entrada</legend>
+            <label for="name_input">Usuario:</label>
+            <input type="text" name="name" id="name_input" placeholder="Nome do Usuario" required>
+            <label for="input_password">Senha:</label>
+            <input type="password" name="password" id="input_password" placeholder="Senha" required>
+            <label for="mail_input">Email:</label>
+            <input type="email" name="mail" id="mail_input" placeholder="E-mail" required>
+            <input type="submit" class="btn" value="Enviar">
+        </fieldset>
     </form>
 </body>
 
