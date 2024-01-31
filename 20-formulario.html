@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário HTML</title>
-    
+    <title>Formulario em HTML</title>
+    <style>
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        fieldset {
+            padding: 10rem;
+        }
+    </style>
 </head>
+
 <body>
     <form action="processador.php" method="post">
         <fieldset>
-            <h1>Formulario HTML</h1>
             <label for="campo_nome">Nome:</label> <br>
             <input type="text" name="nome" id="campo_nome" placeholder="Seu Nome Completo"> <br><br><br>
             <label>Tipo de Curso:</label><br><br>
             <input type="radio" name="curso" id="tipo_curso_a" value="presencial"> Presencial <br>
             <input type="radio" name="curso" id="tipo_curso_b"> Semipresencial <br>
             <input type="radio" name="curso" id="tipo_curso_c" value="ead"> EAD <br><br><br>
-            <input type="submit" value="Enviar" class="btn"><br><br>
-            <input type="reset" value="Apagar Campos" class="btn">
+            <label>Selecione a area de seu interesse</label><br><br>
+            <input type="checkbox" name="area" value="ti">TI <br>
+            <input type="checkbox" name="area" value="saude">Saúde <br>
+            <input type="checkbox" name="area" value="financas">Finanças <br>
+            <input type="checkbox" name="area" value="agro">Agro <br>
+            <input type="checkbox" name="area" value="games">Games <br><br><br>
+            <input type="submit" value="Enviar"><br><br>
+            <input type="reset" value="Limpar">
         </fieldset>
     </form>
 </body>
+
 </html>
