@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #181818;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        nav a {
+            color: #fafafa;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main h1 {
+            margin: 2rem 0 1.5rem 0;
+        }
+
+        table {
+            margin-top: 2.5rem;
+            border: 1px solid #000;
+            width: 300px;
+        }
+
+        thead {
+            background-color: #00bc85;
+        }
+
+        tr,
+        th,
+        td {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="25-index.html">Home</a>
+            <a href="25-tabela.html">Tabelas</a>
+            <a href="25-fotos.html">Fotos</a>
+            <a href="25-video.html">Videos</a>
+            <a href="25-listas.html">Listas</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Tabela de Carros</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Marcas</th>
+                    <th>Modelos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sedan</td>
+                    <td>Nissan</td>
+                    <td>Sentra 2.0</td>
+                </tr>
+                <tr>
+                    <td>Esportivo</td>
+                    <td>Porsche</td>
+                    <td> 911 Turbo</td>
+                </tr>
+                <tr>
+                    <td>Sedan</td>
+                    <td>Volkswagen</td>
+                    <td>Jetta</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
