@@ -7,7 +7,8 @@
     <title>Formulario em HTML</title>
     <style>
         body {
-            width: 100%;
+            background: linear-gradient(135deg, #00aaff, #00ffaa);
+            max-width: 100%;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -16,7 +17,21 @@
         }
 
         fieldset {
+            background-color: #fff;
+            border-radius: 8px;
             padding: 10rem;
+        }
+
+        .btn{
+            background-color: #0045aa;
+            color: #fff;
+            border: 2px solid #000;
+            border-radius: 3px;
+        }
+
+        .btn:hover{
+            transform: scale(1.04);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -36,8 +51,8 @@
             <input type="checkbox" name="area" value="financas">Finanças <br>
             <input type="checkbox" name="area" value="agro">Agro <br>
             <input type="checkbox" name="area" value="games">Games <br><br><br>
-            <input type="submit" value="Enviar"><br><br>
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar" class="btn"><br><br>
+            <input type="reset" value="Limpar" class="btn">
         </fieldset>
     </form>
 </body>

@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
     <title>Tabela</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Lora', serif;
         }
 
         body {
+            background-color: #fafafa;
             width: 100%;
             min-height: 100vh;
             display: flex;
@@ -22,20 +29,36 @@
         }
 
         header {
-            background-color: #181818;
+            background-color: #0085ff;
+            color: #fafafa;
             width: 100%;
-            height: 60px;
+            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
+        header h1 {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
         nav {
+            width: 100%;
+            padding: 16px;
+            background-color: #050505;
+            border: 1px solid #000;
             display: flex;
+            justify-content: center;
             gap: 16px;
         }
 
+        #menu-icon {
+            display: none;
+            color: #fafafa;
+        }
+
         nav a {
+            font-family: 'Ubuntu', sans-serif;
             color: #fafafa;
             text-decoration: none;
             padding: 12px;
@@ -55,9 +78,11 @@
 
         main h1 {
             margin: 2rem 0 1.5rem 0;
+            font-family: 'Ubuntu', sans-serif;
         }
 
         table {
+            font-family: 'Ubuntu', sans-serif;
             margin-top: 2.5rem;
             border: 1px solid #000;
             width: 300px;
@@ -72,19 +97,50 @@
         td {
             border: 1px solid #000;
         }
+
+        @media screen and (max-width:638px) {
+            #menu-icon {
+                display: flex;
+                color: #fafafa;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #link {
+                display: none;
+            }
+
+            a,
+            p {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
+        <h1>Tudo sobre Automobilismo</h1>
+    </header>
+
+    <nav>
+        <p id="menu-icon">≣</p>
+        <div id="link">
             <a href="25-index.html">Home</a>
             <a href="25-tabela.html">Tabelas</a>
             <a href="25-fotos.html">Fotos</a>
             <a href="25-video.html">Videos</a>
             <a href="25-listas.html">Listas</a>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
     <main>
         <h1>Tabela de Carros</h1>
         <table>
@@ -114,6 +170,16 @@
             </tbody>
         </table>
     </main>
+    <script>
+        const link = document.getElementById("link")
+        const menuIcon = document.getElementById("menu-icon")
+
+        menuIcon.addEventListener("click", () => {
+            menuIcon.style.display = "none";
+            link.style.display = "flex";
+            link.style.flexDirection = "column"
+        });
+    </script>
 </body>
 
 </html>
